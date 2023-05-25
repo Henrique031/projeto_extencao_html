@@ -3,3 +3,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+#img-logo {
+    width: 140px;
+    height: 70px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+#area-user button {
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-maps {
+    border: 1px solid black;
+    max-width: 25%;
+    margin-top: 30px;
+}
+
+.input-cep input,
+.input-esporte select {
+    border-radius: 20px;
+    width: 80%;
+    height: 30px;
+    border: 0.4px solid black;
+}
+
+.input-cep input {
+    padding: 0 21px;
+}
+
+.input-cep {
+    display: flex;
+    justify-content: center;
+    padding-top: 38px;
+    padding-bottom: 28px;
+}
+
+
+.input-cep input::placeholder{
+    text-align: center;
+}
+
+option {
+    text-align: center;
+}
+.input-esporte {
+    display: flex;
+    justify-content: center; 
+}
+
+.container-maps-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 38px;
+}
+
+.img-maps {
+    width: 100%;
+}
+
+.desc {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 35px;
+}
