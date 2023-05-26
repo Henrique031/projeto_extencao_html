@@ -4,10 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+a:link {
+    color: #ffffff;
 }
 
 body {
-    background-color: #1e1e22;
+    background-image: linear-gradient(green, #045405);
 }
 
 :root {
@@ -44,6 +49,7 @@ h1 {
     width: 90px;
     height: 40px;
     border-radius: 20px;
+    box-shadow: 7px 7px 7px black;
     border: 0;
     box-shadow: 7px, 7px, 7px, black;
     cursor: pointer;
@@ -76,7 +82,7 @@ h1 {
     border-radius: 10px;
     margin-left: 2.5rem;
     padding: 25px;
-    box-shadow: 5px, 5px, 5px, black;
+    box-shadow: 7px, 7px, 7px, black;
     background-color: #35974e;
 }
 
@@ -90,14 +96,19 @@ h1 {
     margin-bottom: 15px;
 }
 
+.input-cep input {
+    text-align: center;
+}
+
 .input-cep input::placeholder {
     text-align: center;
 }
 
 .input-cep input, select {
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid black;
-    width: 200px;
+    width: 29vh;
+    height: 4vh;
 }
 
 select option {
@@ -126,7 +137,10 @@ select option {
 
 .card {
     margin-top: 30px;
-    border: 1px solid black;
+    border: 0;
+    box-shadow: 7px 7px 7px black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
     height: 270px;
     width: 45rem;
     background-color: #35974e;
@@ -151,10 +165,6 @@ select option {
     padding-bottom: 28px;
 }
 
-#btn-agendar {
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
 
 .foto-centro-esportivo {
     width: 90%;
@@ -163,12 +173,15 @@ select option {
 }
 
 #btn-agendar {
-    border: 0.5, solid, black;
+    border: 0.5 solid black;
     cursor: pointer;
     border-radius: 20px;
-    background-color: orange;
-    box-shadow: 5px, 5px, 5px, black;
+    background-color: #73f190;
+    box-shadow: 5px 5px 5px black;
+    border: 0;
     color: white;
     width: 100px;
     height: 35px;
+    margin-bottom: 0;
+    margin-left: 0;
 }
