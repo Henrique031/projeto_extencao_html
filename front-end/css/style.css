@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    margin-bottom: 5rem;
 
 }
 
@@ -28,63 +29,115 @@ h1 {
     margin-right: 10px;
 }
 
-main {
+.container-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 8%;
+    left: 5%;
+    width: 30%;
+
+} 
+
+.container-main-busca-gps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 2.5rem;
+    padding: 25px;
+    box-shadow: 5px, 5px, 5px, black;
+    background-color: grey;
+}
+
+.container-input-esporte {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.conteudo-maps {
-    border: 1px solid black;
-    max-width: 25%;
-    margin-top: 30px;
-}
-
-.input-cep input,
-.input-esporte select {
-    border-radius: 20px;
-    width: 80%;
-    height: 30px;
-    border: 0.4px solid black;
-}
-
-.input-cep input {
-    padding: 0 21px;
-}
-
 .input-cep {
-    display: flex;
-    justify-content: center;
-    padding-top: 38px;
-    padding-bottom: 28px;
+    margin-bottom: 15px;
 }
 
-
-.input-cep input::placeholder{
+.input-cep input::placeholder {
     text-align: center;
 }
 
-option {
+.input-cep input, select {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+select option {
     text-align: center;
 }
-.input-esporte {
-    display: flex;
-    justify-content: center; 
-}
 
-.container-maps-img {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 38px;
-}
-
-.img-maps {
+.imagem-gps {
     width: 100%;
 }
 
-.desc {
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-bottom: 35px;
+.enderecos-gps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-main-cards {
+    position: absolute;
+    top: 30%;
+    margin-left: 43%;    
+}
+
+/* .lugares-encontrados {
+    margin-bottom: 25px;
+} */
+
+.card {
+    margin-top: 30px;
+    border: 1px solid black;
+    height: 270px;
+    width: 45rem;
+}
+
+.nome-lugar {
+    padding: 15px;
+    padding-left: 100px;
+}
+
+.card-vertical {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.container-enderecos {
+    margin-bottom: 30px;
+}
+
+.container-enderecos p {
+    padding-bottom: 28px;
+}
+
+#btn-agendar {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.foto-centro-esportivo {
+    width: 90%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+#btn-agendar {
+    border: 0.5, solid, black;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: orange;
+    box-shadow: 5px, 5px, 5px, black;
+    color: white;
+    width: 100px;
+    height: 35px;
 }

@@ -11,7 +11,7 @@
 <body>
     <header>
         <picture>
-            <img src="./img/logo-sem-fundo.png" alt="logo" id="img-logo">
+            <img loading="lazy" src="./img/logo-sem-fundo.png" alt="logo" id="img-logo">
         </picture>
 
         <div>
@@ -25,37 +25,76 @@
     </header>
 
 
-<main>
-    <div class="conteudo-maps">
-        <div class="input-cep">
-            <label for="input-cep"></label>
-            <input type="text" placeholder="Digite seu CEP" id="input-cep">
-        </div>
-
-        <div class="input-esporte">
-            <select name="tipo-esporte">
-                <option value>Todos os Esportes</option>
+<main class="container-sticky">
+    <div class="container-main-busca-gps">
+        <div class="container-input-esporte">
+            <div class="input-cep">
+                <label for="cep-value"></label>
+                <input type="text" name="cep-value" placeholder="Digite seu CEP">
+            </div>
+            <div class="select-esporte">
+            <select name="select-esporte" id="">
+                <option value>Selecione o Esporte</option>
+                <option value="Futebol-Society">Futebol Society</option>
                 <option value="Futebol-Campo">Futebol de Campo</option>
                 <option value="Futebol-Areia">Futebol de Areia</option>
-                <option value="Futebol-Society">Futebol Society</option>
                 <option value="Futsal">Futsal</option>
                 <option value="Volei">Volei</option>
                 <option value="Basquete">Basquete</option>
             </select>
         </div>
-
-        <picture class="container-maps-img">
-            <img src="./img/bk-campo-futebol.jpg" alt="Imagem maps" class="img-maps">
-        </picture>
-
-        <p class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quos corrupti exercitationem voluptatum ea nisi iure assumenda harum qui. Vel, similique pariatur ipsa non veritatis rerum veniam nisi autem placeat?
-        </p>
+    </div>
+        <figure>
+            <img loading="lazy" src="./img/imagem-gps.jfif" alt="Gps" class="imagem-gps">
+        </figure>
+        <div class="enderecos-gps">
+            <p>Estado: SP</p>
+            <p>Bairro: Jardim Salete</p>
+            <p>Cidade: Taboão da Serra</p>
+        </div>
     </div>
 </main>
 
-    <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi modi voluptatem sunt iste. Deserunt, temporibus earum sit ad eius a perferendis qui alias dolorem hic ut aliquid sequi ducimus eveniet!
-    </footer>
+<section class="container-main-cards">
+    <h2 class="lugares-encontrados">Lugares encontrados: 6</h2>
+    <div class="container-cards">
+        <div class="card">
+            <h3 class="nome-lugar">Nome do Lugar</h3>
+            <div class="card-vertical">
+                <picture>
+                    <img loading="lazy" src="./img/imagem-campo-society.jfif" alt="Lugar esportivo" class="foto-centro-esportivo">
+                </picture>
+                
+                <div class="container-enderecos">
+                    <p>Rua: Francisco Comino, 104</p>
+                    <p>Jardim Record</p>
+                    <p>Taboão da Serra</p>
+                </div>
+                
+                <button id="btn-agendar">Agendar</button>
+            </div>
+        </div>
+    </div><div class="container-cards">
+        <div class="card">
+            <h3 class="nome-lugar">Nome do Lugar</h3>
+            <div class="card-vertical">
+                <picture>
+                    <img loading="lazy" src="./img/imagem-campo-society.jfif" alt="Lugar esportivo" class="foto-centro-esportivo">
+                </picture>
+                
+                <div class="container-enderecos">
+                    <p>Rua: Francisco Comino, 104</p>
+                    <p>Jardim Record</p>
+                    <p>Taboão da Serra</p>
+                </div>
+                
+                <button id="btn-agendar">Agendar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<p style="padding-bottom: 2000px;"></p>
+
 </body>
 </html>
