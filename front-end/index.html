@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <script src="js/script.js" defer></script>
     <title>Esportes</title>
 </head>
 <body>
     <header>
         <picture>
-            <img loading="lazy" src="./img/logo-sem-fundo.png" alt="logo" id="img-logo">
+            <img loading="lazy" src="./img/logo_grande_sem_fundo.png" alt="logo" id="img-logo">
         </picture>
 
-        <div>
-            <h1>+Esportes</h1>
-        </div>
 
         <div id="area-user">
             <button id="btn-minha-conta"><a href="#minha-conta">Minha conta</a></button>
@@ -27,13 +25,19 @@
 
 <main class="container-sticky">
     <div class="container-main-busca-gps">
-        <div class="container-input-esporte">
+        <div class="container-cep-esporte">
             <div class="input-cep">
                 <label for="cep-value"></label>
-                <input type="text" name="cep-value" placeholder="Digite seu CEP" maxlength="8">
+                <input 
+                type="text"
+                name="cep" 
+                placeholder="Digite seu CEP" 
+                maxlength="9" 
+                id="cep-value"
+                >
             </div>
             <div class="select-esporte">
-            <select name="select-esporte" id="">
+            <select name="nome-esporte" id="select-esport">
                 <option value>Selecione o Esporte</option>
                 <option value="Futebol-Society">Futebol Society</option>
                 <option value="Futebol-Campo">Futebol de Campo</option>
@@ -71,10 +75,12 @@
                     <p>Taboão da Serra</p>
                 </div>
                 
-                <button id="btn-agendar">Agendar</button>
+                <label for="btn-agendar"></label>
+                <input type="date" name="calendario" id="btn-agendar" placeholder="Data">
             </div>
         </div>
-    </div><div class="container-cards">
+    </div>
+    <!-- <div class="container-cards">
         <div class="card">
             <h3 class="nome-lugar">Nome do Lugar</h3>
             <div class="card-vertical">
@@ -91,7 +97,7 @@
                 <button id="btn-agendar">Agendar</button>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <p style="padding-bottom: 2000px;"></p>

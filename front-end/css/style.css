@@ -7,31 +7,46 @@
     text-decoration: none;
 }
 
-a:link {
-    color: #ffffff;
-}
-
-body {
-    background-image: linear-gradient(green, #045405);
-}
-
 :root {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-}   
+} 
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #3b5fe2;
+}
+
 
 header {
     display: flex;
-    background-color: #35974e;
+    background-color: #47ff54;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     margin-bottom: 5rem;
+    width: 100%;
+    max-height: 100px;
+    border-radius: 0 0 50px 50px
+
+}
+picture {
+    margin: 0 auto;
 }
 
 #img-logo {
-    width: 140px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
+    padding-left: 150px;
 }
 
 h1 {
@@ -47,8 +62,8 @@ h1 {
 #btn-minha-conta,
 #btn-sair-conta {
     width: 90px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 15px;
     box-shadow: 7px 7px 7px black;
     border: 0;
     box-shadow: 7px, 7px, 7px, black;
@@ -57,12 +72,21 @@ h1 {
 }
 
 #btn-minha-conta {
-    background-color: #73f190 ;
-
+    background-color: #0858f7;
+    /* background-color: #08f724; */
+    /* background-color: #73f190 ; */
+    width: 120px;
 }
 
+#btn-minha-conta:active,
+#btn-sair-conta:active,
+#btn-agendar:active {
+    box-shadow: none;
+}
+
+
 #btn-sair-conta {
-    background-color: #17181b;
+    background-color: #d60505;
 }
 
 .container-sticky {
@@ -78,15 +102,14 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border: 1px solid black;
     border-radius: 10px;
     margin-left: 2.5rem;
     padding: 25px;
-    box-shadow: 7px, 7px, 7px, black;
-    background-color: #35974e;
+    box-shadow: 9px 9px 9px black;
+    background-color: #47ff54;
 }
 
-.container-input-esporte {
+.container-cep-esporte {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,13 +130,16 @@ h1 {
 .input-cep input, select {
     border-radius: 20px;
     border: 1px solid black;
-    width: 29vh;
-    height: 4vh;
+    width: 100%;
+    min-width: 40vh;
+    height: 5vh;
+    max-width: 40vh;
 }
 
 select option {
     text-align: center;
 }
+
 
 .imagem-gps {
     width: 100%;
@@ -138,12 +164,11 @@ select option {
 .card {
     margin-top: 30px;
     border: 0;
-    box-shadow: 7px 7px 7px black;
-    /* border: 1px solid black; */
+    box-shadow: 5px 5px 5px black;
     border-radius: 10px;
     height: 270px;
     width: 45rem;
-    background-color: #35974e;
+    background-color: #47ff54;
 }
 
 .nome-lugar {
@@ -165,23 +190,40 @@ select option {
     padding-bottom: 28px;
 }
 
-
 .foto-centro-esportivo {
     width: 90%;
     height: 100%;
     margin-left: 30px;
 }
 
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
 #btn-agendar {
     border: 0.5 solid black;
     cursor: pointer;
-    border-radius: 20px;
-    background-color: #73f190;
+    border-radius: 15px;
+    background-color: #0858f7;
     box-shadow: 5px 5px 5px black;
     border: 0;
     color: white;
     width: 100px;
-    height: 35px;
+    height: 45px;
     margin-bottom: 0;
     margin-left: 0;
+    margin-right: 30px;
 }
