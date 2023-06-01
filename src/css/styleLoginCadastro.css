@@ -303,7 +303,31 @@ input:-webkit-autofill
     animation: deslocamentoDir 2.0s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
-/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+/* MENSAGEM DE SUCESSO, CASO O CADASTRO TENHA SUCESSO */
+
+.mensagem-escondida {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.mensagem-aparecendo {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+  #mensagem{
+    display: flex;
+    width: 170px;
+    border: 1px solid #42220338;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgba(67, 240, 24, 0.719);
+    color: #fff;
+    margin: 30px auto;
+}
+
+/*ANIMAÇÃO CSS PARA O CONTEÚDO*/
 
 @keyframes deslocamentoEsq {
 
