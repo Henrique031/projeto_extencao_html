@@ -36,28 +36,28 @@
                 <h2 class="title title-second">Criar conta</h2>
                 
                 <!--Cadastro-->
-                <p class="description description-second">insira seus dados:</p>
-                <!--Forms para o cadastro com os inputs-->
-                <form class="form">
-                    <!---Campo de nome com icone de usuário-->
-                    <label class="label-input" for="input_nome">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome de usuário" id="input_nome" required>
-                    </label>
-                    <!---Campo de email com icone de envelope-->
-                    <label class="label-input" for="input_email">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Seu E-mail" id="input_email" required>
-                    </label>
-                    <!--Campo de senha com cione de cadeado-->
-                    <label class="label-input" for="input_senha">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Sua Senha" id="input_senha" required>
-                    </label>
-                    
-                    <button class="btn btn-second">sign up</button>
-                    <div id="mensagem" class="mensagem-escondida">Cadastro realizado!</div> 
-                </form>
+            <p class="description description-second">insira seus dados:</p>
+            <!--Forms para o cadastro com os inputs-->
+            <form class="form">
+            <!---Campo de nome com icone de usuário-->
+            <label class="label-input" for="">
+                <i class="far fa-user icon-modify"></i>
+                <input id="nome-usuario" type="text" placeholder="Nome de usuário" required>
+            </label>
+            <!---Campo de email com icone de envelope-->
+            <label class="label-input" for="">
+                <i class="far fa-envelope icon-modify"></i>
+                <input id="email" type="email" placeholder="Seu E-mail" required>
+            </label>
+            <!--Campo de senha com cione de cadeado-->
+            <label class="label-input" for="">
+                <i class="fas fa-lock icon-modify"></i>
+                <input id="senha" type="password" placeholder="Sua Senha" required>
+            </label>
+
+            <button onclick="verificarCadastro()" class="btn btn-second">sign up</button>
+            <div id="mensagem" class="mensagem-escondida">Cadastro realizado!</div>  
+            </form>
             </div><!--segunda coluna -->
         </div><!-- primeiro conteudo -->
         <!--Columa de login-->

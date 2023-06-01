@@ -200,8 +200,7 @@ body {
 .form input {
     height: 45px;
     width: 100%;
-    border: none;
-
+    border: none;  
     background-color: #ecf0f1;
     padding-left: 10px;
 }
@@ -308,14 +307,14 @@ input:-webkit-autofill
 .mensagem-escondida {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
+  }
   
-.mensagem-aparecendo {
+  .mensagem-aparecendo {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}
+  }
 
-#mensagem{
+  #mensagem{
     display: flex;
     width: 170px;
     border: 1px solid #42220338;
@@ -324,8 +323,9 @@ input:-webkit-autofill
     font-weight: bold;
     background-color: rgba(67, 240, 24, 0.719);
     color: #fff;
-    margin: 30px auto;
-}
+    margin: auto;
+    margin-top: 20px;
+  }
 
 /*ANIMAÇÃO CSS PARA O CONTEÚDO*/
 
