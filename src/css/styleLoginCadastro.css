@@ -315,7 +315,7 @@ input:-webkit-autofill
     transition: opacity 1s ease-in-out;
 }
 
-  #mensagem{
+#mensagem{
     display: flex;
     width: 170px;
     border: 1px solid #42220338;
