@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/src/js/scriptLoginCadastro.js" defer></script>
+    <title>Login +Esportes</title>
+    <!--Fav Icon-->
+    <link rel="icon" href="./src/images/icons/favicon-16x16.png">
+    <!--Estilos-->
+    <link rel="stylesheet" href="./src/css/styleLoginCadastro.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+       <!--Icones-->
+  
+</head>
+<body>
+    <!---Logo na parte do Login-->
+    <figure id="figureLogoLogin">
+        <img src="src/images/logo/logoSemFundo.png"  class="logoLogin" alt="Logo">
+      </figure>
+    <div class="container">
+        <!--Tela de Login-->
+        <div class="content first-content">
+            <!--Texto de boas vindas de volta na tela de login-->
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-vindo de volta!</h2>
+                <p class="description description-primary">Para continuar conosco</p>
+                <p class="description description-primary">por favor, entre com sua conta: </p>
+                <!--Botão para se registrar-->
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>    
+             <!--Coluna da tela de criar conta-->
+            <div class="second-column">
+                <h2 class="title title-second">Criar conta</h2>
+                
+                <!--Cadastro-->
+                <p class="description description-second">insira seus dados:</p>
+                <!--Forms para o cadastro com os inputs-->
+                <form class="form">
+                    <!---Campo de nome com icone de usuário-->
+                    <label class="label-input" for="input_nome">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome de usuário" id="input_nome" required>
+                    </label>
+                    <!---Campo de email com icone de envelope-->
+                    <label class="label-input" for="input_email">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Seu E-mail" id="input_email" required>
+                    </label>
+                    <!--Campo de senha com cione de cadeado-->
+                    <label class="label-input" for="input_senha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Sua Senha" id="input_senha" required>
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">sign up</button>        
+                </form>
+            </div><!--segunda coluna -->
+        </div><!-- primeiro conteudo -->
+        <!--Columa de login-->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, seja bem-vindo!</h2>
+                <p class="description description-primary">Entre com seus dados </p>
+                <p class="description description-primary">e vamos começar:</p>
+                <button id="signup" class="btn btn-primary">sign up</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Logue com as redes:</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <!--Icone do Facebook-->
+                        <li class="item-social-media">
+                            <a class="link-social-media" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            </li>
+                        <!---Icone do Google-->
+                        <li class="item-social-media">
+                            <a class="link-social-media" href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <!--Icone do Twitter-->
+                        <li class="item-social-media">
+                            <a class="link-social-media" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">ou use sua conta de email:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="input-email-cadastrado" >
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Seu E-mail" id="input-email-cadastrado"  required>
+                    </label>
+                
+                    <label class="label-input" for="input-senha-cadastrado">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password"  placeholder="sua Senha" id="input-senha-cadastrado" required>
+                    </label>
+                
+                    <a class="password" href="#">esqueceu a sua senha? clique aqui!</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!--Segunda coluna -->
+        </div><!-- Segundo conteúdo -->
+    </div>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
