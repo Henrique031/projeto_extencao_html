@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+/* Reset do CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family:'Open Sans', sans-serif;
+    border: 0;
+}
+
+
+/* Estilização do corpo da pagina */
+body {
+    display: flex;
+    height: inherit;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-image: url(/src/images/fundos/fundoTelaConta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+
+/* Estilização do container */
+.container {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização da seta de voltar */
+.voltar{
+    display: flex;
+    width: 1.5vw;
+    margin: 2vw 0 0 1vw;
+}
+
+/* Estilização da pate principal */
+.principal {
+    display: flex;
+    width: 50vw;
+    height: 35vw;
+    background-color: #fffffff5;
+    display: flex;
+    margin: 7rem;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+/* Estilização do enunciado "minha conta" */
+.tituloMinhaConta{
+    font-size: 3vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+/* Estilização do modal(janela flutuante que abre ao clicar em editar) */
+.editarPerfilModal {
+    width: 40vw;
+    height: 30vw;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1000px 1000px 1000px 3000px #4d4d4dda;
+    justify-content: center;
+  }
+
+/* Estilização das label */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+/* Estilização dos tipos de input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.7vw;
+    margin-bottom: 20px;
+    border:1px solid #f78c00;
+    border-radius: 10px;
+}
+
+/* Estilização dos botões da página */
+.button {
+    display: inline-block;
+    background-color: #f78c00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.button-danger {
+    background-color: #17181b ;
+    border-radius: 5px;
+}
+
+/* Estilização dos botões em estado de hover */
+.button:hover{
+    cursor:pointer;
+    background-color: #f78c00;
+}
+
+#editProfileModal{
+    margin-top: 1.5rem;
+}

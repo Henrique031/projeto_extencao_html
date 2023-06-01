@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/images/icons/favicon-16x16.png">
+
+  <title>+Esporte Minha Conta</title>
+  <link rel="stylesheet" href="/src/css/styleMinhaConta.css">
+  <script src="/src/js/scriptMinhaConta.js" defer></script>
+</head>
+<body>
+  
+  <div class="principal">
+    <figure class="figureVoltar">
+      <a href="/+EsportePrincipal.html">
+      <img src="/src/images/icons/voltar.png" class="voltar" alt="voltar">
+      </a>
+    </figure>
+    <!-- Container principal que engloba todo o conteúdo da página -->
+
+    <div class="container">
+      <!-- Container que engloba as informações do perfil do usuário -->
+      <div class="inputUsuario">
+        <h1 class="tituloMinhaConta">Minha Conta</h1>
+        <h2>Perfil</h2>
+
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" value="" placeholder="Seu nome / Puxar do banco de dados" readonly>
+        <!-- Campo de texto para exibir o nome completo do usuário (pode ser puxado do banco de dados) e está configurado para ser somente leitura -->
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" value="Email" placeholder="Seu email / Puxar do banco de dados" readonly>
+        <!-- Campo de texto para exibir o email do usuário (pode ser puxado do banco de dados) e está configurado para ser somente leitura -->
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" value="password" readonly>
+        <!-- Campo de senha para exibir a senha do usuário, embora não seja recomendável isso em um ambiente real. Também está configurado para ser somente leitura -->
+        
+        <!-- Botão para editar o perfil do usuário -->
+        <button class="button" onclick="editProfile()">Editar</button>
+        <!-- Botão para deletar a conta do usuário -->
+        <button class="button button-danger" onclick="deleteAccount()">Deletar Conta</button>
+      </div>
+
+      <!-- Modal para edição do perfil do usuário -->
+      <div id="editProfileModal" class="editarPerfilModal" style="display: none;">
+        <!-- Div que engloba a modal - inicialmente está oculta com display: none -->
+
+        <h2>Editar Perfil</h2>
+
+        <label for="editEmail">Email:</label>
+        <input type="text" id="editEmail" value="" placeholder="Inserir novo email">
+        <!-- Campo de texto para inserir o novo email do usuário -->
+
+        <label for="editPassword">Senha:</label>
+        <input type="password" id="editPassword" value="password" placeholder="Inserir nova senha">
+        <!-- Campo de senha para inserir a nova senha do usuário -->
+
+        <!-- Botão para salvar as alterações feitas na edição -->
+        <button class="button" onclick="saveChanges()">Salvar</button>
+        <!-- Botão para cancelar a edição e fechar a modal -->
+        <button class="button" onclick="cancelEdit()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
