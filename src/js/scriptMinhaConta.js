@@ -96,7 +96,8 @@ function deleteAccount() {
     });
 
     alert('Sua conta foi deletada!');
-    window.location.reload()
+
+    window.location.href = '../../+EsporteLoginCadastro.html'; 
   }
 }
 
