@@ -16,13 +16,6 @@ fetch('http://localhost:3000/esporte')
   document.getElementById('email').value = objetoEncontrado.email;
   document.getElementById('password').value = objetoEncontrado.senha;
   
-
-  if (objetoEncontrado) {
-    console.log('Objeto encontrado:', objetoEncontrado); //Retirar
-    // Faça o que for necessário com o objeto encontrado
-  } else {
-    console.log('Objeto não encontrado');
-  }
 })
 .catch(error => {
   console.error('Ocorreu um erro:', error);
@@ -49,9 +42,6 @@ btSalvar.addEventListener("click", function() {
     body: JSON.stringify(data)
   })
   .then(response => response.json())
-  .then(result => {
-    console.log('Resposta da API:', result.message);
-  })
   .catch(error => {
     console.error('Ocorreu um erro:', error);
   });
