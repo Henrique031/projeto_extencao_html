@@ -23,6 +23,7 @@
 
     <div class="container">
       <!-- Container que engloba as informações do perfil do usuário -->
+      
       <div class="inputUsuario">
         <h1 class="tituloMinhaConta">Minha Conta</h1>
         <h2>Perfil</h2>
@@ -43,6 +44,8 @@
         <button class="button" onclick="editProfile()">Editar</button>
         <!-- Botão para deletar a conta do usuário -->
         <button class="button button-danger" onclick="deleteAccount()">Deletar Conta</button>
+
+        
       </div>
 
       <!-- Modal para edição do perfil do usuário -->
@@ -66,6 +69,39 @@
       </div>
     </div>
   </div>
+  <div class="principalComment">
+    
+    <!-- Container principal que engloba todo o conteúdo da página -->
+    <figure class="figureVoltar">
+      <a href="/+EsportePrincipal.html">
+      <img src="/src/images/icons/voltar.png" class="voltar" alt="voltar">
+      </a>
+    </figure>
+
+    <div class="containerComment">
+      <!-- Container que engloba os comments -->
+        <h1 class="tituloMinhaConta">Meus comentários</h1>
+        
+      <section class="comentariosSection">
+        <div class="formColuna">
+          <h2>Fazer Comentário</h2>
+      
+          <!-- Formulário para fazer um comentário -->
+          <form id="commentForm">
+            <input type="text" id="commentInput" placeholder="Digite seu comentário">
+            <button type="submit" class="button" id="bntComentario">Enviar</button>
+          </form>
+        </div>
+      
+        <div class="comentariosColuna">
+          <h2 id="comment">Comentários</h2>
+      
+          <!-- Exibição dos comentários -->
+      
+        </div>
+      </section>
+    </div>
+
 </body>
 
 

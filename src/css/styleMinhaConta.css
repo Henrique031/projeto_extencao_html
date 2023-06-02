@@ -27,7 +27,15 @@ body {
 
 /* Estilização do container */
 .container {
-    width: 50vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerComment {
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
@@ -46,6 +54,17 @@ body {
     display: flex;
     width: 50vw;
     height: 35vw;
+    background-color: #fffffff5;
+    display: flex;
+    margin: 7rem;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.principalComment {
+    display: flex;
+    width: 50vw;
+    height: 19vw;
     background-color: #fffffff5;
     display: flex;
     margin: 7rem;
@@ -122,3 +141,24 @@ input[type="password"] {
 #editProfileModal{
     margin-top: 1.5rem;
 }
+
+
+.comentariosSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 45px;
+  }
+
+  /* Estilização coment */
+
+  
+  input[type="text"],
+  input[type="password"] {
+    /* Estilos para os inputs de texto e senha */
+    background-color: #f0f0f0;
+    /* color: white; */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+  }

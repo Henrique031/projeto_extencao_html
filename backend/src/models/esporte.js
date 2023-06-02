@@ -36,11 +36,19 @@ const postCommentVinc = async (id, comentario) => {
         'SELECT * FROM perfil WHERE id = ?',
         [id]
     );
+
+    if(conta[0].id == undefined){
+        return;
+    }
     //Verificar se o comentario no banco de dados
     const [comentarios] = await connection.execute(
         'SELECT * FROM comentarios WHERE comentarios = ?',
         [comentario]
     );
+
+    if(comentarios[0].id == undefined){
+        return;
+    }
     //faz o vinculo do comentario pelo ID
     const [vinculoComentario] = await connection.execute(
         'INSERT INTO perfil_comentario (comentarios_id, perfil_id) VALUES (?, ?)',
