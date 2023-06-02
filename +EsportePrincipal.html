@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
 	<link rel="stylesheet" href="/src/css/StylePrincipal.css">
 	<title>+Esporte</title>
-	
+
+
 	<link rel="icon" href="./src/images/icons/favicon-16x16.png">
 
 </head>
@@ -118,26 +119,29 @@
 	</section><!--porque-nos-->
 	</a>
 
-
 	<section class="voce">
 		<div class="center">
-			<h3 style="text-align: center;width: 100%; padding: 0 0 30px 0;">Busque por quadras/locais</h3>
-			<div class="apiBusca">
-				<div class="columnBusca">
-					<div class="cep-search">
-						<input type="text" id="cep-input" placeholder="Digite seu CEP">
-						<button id="buscar-btn">Buscar</button>
-					</div>
-				</div>
-				<div class="columnResultado">
-					<!-- Coluna vertical com dados mockados -->
-					<p>Dado 1</p>
-					<p>Dado 2</p>
-					<p>Dado 3</p>
-				</div>
+		  <h3 style="text-align: center;width: 100%; padding: 0 0 30px 0;">Busque por quadras/locais</h3>
+		  <div class="apiBusca">
+			<div class="columnBusca">
+			  <div class="cep-search">
+				<input type="text" id="cep-input" placeholder="Digite seu CEP">
+				<select id="local-select">
+				  <option value="quadra">Quadra</option>
+				  <option value="campo">Campo</option>
+				  <option value="academia">Academia</option>
+				  <option value="ginasio">Ginásio de esportes</option>
+				  <option value="escola">Escola de futebol</option>
+				</select>
+				<button id="buscar-btn">Buscar</button>
+			  </div>
 			</div>
+		  </div>
+		  <div id="map" style="height: 400px;"></div>
 		</div>
-	</section>
+	  </section>
+	  
+ 
 
 	<a id="port"></a>
 	<div class="quadros">
@@ -214,6 +218,8 @@
 	
 
 	<script src="/src/js/mobile-navbar.js"></script>
+	<script src="./src/js/scriptviacep.js"></script>
+
 
 
 
