@@ -1,4 +1,7 @@
-let id_do_usuario = 20; //VARIAVEL QUE PRECISA VIR DO ARQUIVO scriptLoginCadastro.js
+
+let id = localStorage.getItem('meuValor');
+let id_do_usuario = parseInt(id);
+
 
 var btSalvar = document.querySelector("#btSalvar")
 

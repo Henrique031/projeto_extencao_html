@@ -11,8 +11,7 @@ var body = document.querySelector("body");
 var botaoSignIN = document.querySelector("#login");
 //Seleciona o botao de cadastrar
 var botaoSignUP = document.querySelector("#cadastrar")
-
-let id_do_usuario; //VARIAVEL QUE PRECISA VIR DA BotaoSignIN.addEventListener fora do escopo pra ser global
+let id_do_usuario;
 
 //Evento para enviar os dados do usuario para validação no backend e retornar positivo ou negativo para o login
 botaoSignIN.addEventListener("click", function(event) {
@@ -39,6 +38,7 @@ botaoSignIN.addEventListener("click", function(event) {
     console.log('Resposta da API:', result.message);
     id_do_usuario = result.id_perfil.id; //VALOR DA VARIAVEL SAI DESTE PONTO APOS A O USUARIO APERTAR O BOTAO DE LOGIN
 
+    localStorage.setItem('meuValor', String(id_do_usuario));
     if(result.message == 'Login válido'){
       setTimeout(() =>{
         window.location.href = '../../+EsportePrincipal.html';
@@ -53,6 +53,12 @@ botaoSignIN.addEventListener("click", function(event) {
   document.querySelector("#input-email-cadastrado").value = "";
   document.querySelector("#input-senha-cadastrado").value = "";
 });
+
+if (localStorage.getItem('meuValor') !== null) {
+  console.log('O valor foi salvo no LocalStorage.', localStorage.getItem('meuValor'));
+} else {
+  console.log('O valor não foi salvo no LocalStorage.');
+}
 
 //Evento para cadastrar os dados do usuario no banco de dados
 botaoSignUP.addEventListener("click", function(event) {
