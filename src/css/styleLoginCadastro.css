@@ -55,8 +55,6 @@ body {
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
-
     left: 0;
 }
 
@@ -298,9 +296,9 @@ input:-webkit-autofill
 }
 
 .sign-up-js .second-content .second-column {
-position: relative;
-z-index: -1;
-animation: deslocamentoDir 1.3s; 
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s; 
 }
 
 /* MENSAGEM DE SUCESSO, CASO O CADASTRO TENHA SUCESSO */
@@ -338,18 +336,6 @@ animation: deslocamentoDir 1.3s;
         z-index: 12;
     }
 
-    25% {
-        left: -80px;
-        opacity: .5;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
-    }
-
-    50% {
-        left: -100px;
-        opacity: .2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
-    }
-
     to {
         left: -110px;
         opacity: 0;
@@ -361,22 +347,15 @@ animation: deslocamentoDir 1.3s;
 @keyframes deslocamentoDir {
 
     from {
+        opacity: 1;
         left: 0;
         z-index: 12;
     }
 
-    25% {
-        left: 80px;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-    }
-
-    50% {
-        left: 100px;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-    }
-
     to {
-        left: 110px;
+        
+        opacity: 0;
+        left: 90px;
         z-index: -1;
     }
 }
@@ -389,21 +368,6 @@ animation: deslocamentoDir 1.3s;
     from {
         left: 0;
         width: 40%;
-    }
-
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
-        width: 50%;
     }
 
     to {
@@ -419,24 +383,8 @@ animation: deslocamentoDir 1.3s;
         width: 40%;
     }
 
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
-    }
-
     to {
         left: 0;
         width: 40%;
     }
 }
-
