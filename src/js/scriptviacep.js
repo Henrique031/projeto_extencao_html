@@ -12,6 +12,10 @@ function initializeMap() {
       center: { lat: -23.550520, lng: -46.633308 }, // Coordenadas de São Paulo
       zoom: 13
     });
+
+    // Adicionar recurso de autocompletar ao campo de input do CEP
+    const autocomplete = new google.maps.places.Autocomplete(cepInput);
+    autocomplete.setFields(['address_component']);
   }
 
   // Adicionar marcador no mapa
