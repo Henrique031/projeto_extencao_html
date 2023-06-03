@@ -295,11 +295,12 @@ input:-webkit-autofill
     position: relative;
     animation: deslocamentoEsq 1.3s;
 
-.sign-up-js .second-content .second-column {
-    position: relative;
-    z-index: -1;
-    animation: deslocamentoDir 1.3s; 
 }
+
+.sign-up-js .second-content .second-column {
+position: relative;
+z-index: -1;
+animation: deslocamentoDir 1.3s; 
 }
 
 /* MENSAGEM DE SUCESSO, CASO O CADASTRO TENHA SUCESSO */

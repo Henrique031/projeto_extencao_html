@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/src/images/icons/favicon-16x16.png">
-
-  <title>+Esporte Minha Conta</title>
   <link rel="stylesheet" href="/src/css/styleMinhaConta.css">
   <script src="/src/js/scriptMinhaConta.js" defer></script>
+
+  <title>+Esporte Minha Conta</title>
 </head>
 <body>
   
-  <div class="principal">
+  <main class="principal">
     <figure class="figureVoltar">
       <a href="/+EsportePrincipal.html">
       <img src="/src/images/icons/voltar.png" class="voltar" alt="voltar">
@@ -68,7 +68,7 @@
         <button class="button" onclick="cancelEdit()">Cancelar</button>
       </div>
     </div>
-  </div>
+  </main>
   <div class="principalComment">
     
     <!-- Container principal que engloba todo o conteúdo da página -->
@@ -88,6 +88,7 @@
       
           <!-- Formulário para fazer um comentário -->
           <form id="commentForm">
+            <label for="commentInput"></label>
             <input type="text" id="commentInput" placeholder="Digite seu comentário">
             <button type="submit" class="button" id="bntComentario">Enviar</button>
           </form>
@@ -101,8 +102,7 @@
         </div>
       </section>
     </div>
-
+  </div>
+  
 </body>
-
-
 </html>

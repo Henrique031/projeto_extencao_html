@@ -64,7 +64,7 @@ body {
 .principalComment {
     display: flex;
     width: 50vw;
-    height: 19vw;
+    height: 100%;
     background-color: #fffffff5;
     display: flex;
     margin: 7rem;
